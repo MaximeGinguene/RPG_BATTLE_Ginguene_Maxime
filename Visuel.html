@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG_BATTLE</title>
+    <script src="rpg.js" async></script>
+<style type="text/css">
+
+body{
+    display : flex;
+    justify-content: space-around;
+    background-image:url('assets/fonddemonrpg.jpg');
+    background-size: 2467px,1696px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    align-items: flex-end;
+
+}
+.lespersos{
+    height:100vh;
+    display : flex ; 
+    justify-content: end;
+    flex-direction: column;
+    justify-content:space-between;
+
+}
+
+#personnage1{
+    width : 200px;
+    height : 200px;
+
+}
+
+#personnage2{
+    width : 200px;
+    height : 200px;
+}
+#personnage3{
+    width : 200px;
+    height : 200px;
+}
+
+#personnage4{
+    width : 200px;
+    height : 200px;
+}
+
+.lesmechants{
+    height:100vh;
+    display : flex ; 
+    justify-content: end;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+
+
+#mechant1{
+    width : 200px;
+    height : 200px;
+}
+#mechant2{
+    width : 200px;
+    height : 200px;
+}
+#mechant3{
+    width : 200px;
+    height : 200px;
+}
+
+
+.texte{
+    display : flex ; 
+    justify-content: center;
+    background-image: url("asset/texte_fond2.png");
+}
+
+
+#texte1{
+    width : 500px;
+    height : 500px;
+    margin-bottom: 50%;
+}
+
+.attaquer {
+    text-align: center;
+    padding : 1em;
+    border : 0.5em solid rgb(255, 0, 0);
+    width  : 4em;
+    height : 4em;
+}
+
+.defendre {
+    text-align: center;
+    padding : 1em;
+    border : 0.5em solid rgb(0, 4, 255);
+    width  : 4em;
+    height : 4em;
+}
+
+.magie {
+    text-align: center;
+    padding : 1em;
+    border : 0.5em solid rgb(183, 0, 255);
+    width  : 4em;
+    height : 4em;
+}
+
+
+
+#pvperso1{
+    display: flex;
+    color: aqua;
+    justify-content: center;
+}
+
+
+#pvperso2{
+    display: flex;
+    color: aqua;
+    justify-content: center;
+}
+
+#pvperso3{
+    display: flex;
+    color: aqua;
+    justify-content: center;
+}
+
+#pvperso4{
+    display: flex;
+    color: aqua;
+    justify-content: center;
+}
+
+#pvmechant1{
+    display: flex;
+    color: rgb(255, 0, 0);
+    justify-content: center;
+
+}
+
+#pvmechant2{
+    display: flex;
+    color: rgb(255, 0, 0);
+    justify-content: center;
+
+}
+
+#pvmechant3{
+    display: flex;
+    color:rgb(255, 0, 0);
+    justify-content: center;
+
+}
+
+#manaperso1{
+    display: flex;
+    color:rgb(251, 255, 2);
+    justify-content: center;
+}
+
+#manaperso2{
+    display: flex;
+    color:rgb(251, 255, 2);
+    justify-content: center;
+}
+
+
+#manaperso3{
+    display: flex;
+    color:rgb(251, 255, 2);
+    justify-content: center;
+}
+
+#manaperso4{
+    display: flex;
+    color:rgb(251, 255, 2);
+    justify-content: center;
+}
+
+#nomperso1{
+
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+#nomperso2{
+
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+#nomperso3{
+
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+#nomperso4{
+
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+#nommechant1{
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+#nommechant2{
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+#nommechant3{
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="lespersos">
+        <img id="personnage1" class="perso" src="assets/julius.jpg" /> 
+            <div id="nomperso1">Alan le boss</div>
+            <div id="pvperso1">100</div>
+            <div id="manaperso1">100</div>
+        <img id="personnage2" class="perso" src="assets/egyptienne.jpg" />
+            <div id="nomperso2">Clara</div>
+            <div id="pvperso2">100</div>
+            <div id="manaperso2">100</div>
+        <img id="personnage3" class="perso" src="assets/archer.png" />
+            <div id="nomperso3">Sarah</div>
+            <div id="pvperso3">100</div>
+            <div id="manaperso3">100</div>
+        <img id="personnage4" class="perso" src="assets/heros1.png" />
+            <div id="nomperso4">Lola</div>
+            <div id="pvperso4">100</div>
+            <div id="manaperso4">100</div>
+
+        </div>
+        <div class="texte">
+            <div id="texte1" class="texte" >
+                <div class="spell">
+                    <div id="action1" class="attaquer"> Attaquer  </div>
+                    <div id="action2" class="defendre"> Se Defendre  </div>
+                    <div id="action3" class="magie"> magie  </div>
+                </div>
+            </div>
+
+        </div>
+     <div class="lesmechants">
+        <img id="mechant1" class="mechant" src="assets/Ennemisvert.jpg"/>
+            <div id="nommechant1">Monstre1</div>
+            <div id="pvmechant1">100</div>
+        <img id="mechant2" class="mechant" src="assets/ennemisbleu.jpg"/>
+            <div id="nommechant2">Monstre2</div>
+            <div id="pvmechant2">100</div>
+        <img id="mechant3" class="mechant" src="assets/ennemis2.png"/>
+            <div id="nommechant3">Monstre3</div>
+            <div id="pvmechant3">100</div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
+
+
